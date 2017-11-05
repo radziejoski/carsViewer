@@ -13,7 +13,8 @@
     <artifactId>cars-viewer-webapp</artifactId>
 
     <properties>
-        <boot.version>1.4.3.RELEASE</boot.version>
+        <carsCore.version>1.0-SNAPSHOT</carsCore.version>
+        <boot.version>1.5.8.RELEASE</boot.version>
     </properties>
 
     <dependencies>
@@ -33,7 +34,12 @@
             <artifactId>spring-boot-starter-freemarker</artifactId>
             <version>${boot.version}</version>
         </dependency>
-    </dependencies>
 
+        <dependency>
+            <groupId>pl.lalowicz.cars</groupId>
+            <artifactId>cars-viewer-core</artifactId>
+            <version>${carsCore.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>
